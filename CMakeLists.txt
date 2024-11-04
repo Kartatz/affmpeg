@@ -55,7 +55,6 @@ set(
 	--enable-avformat
 	--enable-avutil
 	--enable-swresample
-	--enable-avresample
 	--enable-swscale
 	--enable-pthreads
 	--enable-decoder=libvpx_vp9,opus,mp3,h264,mpeg4,mjpeg,gif

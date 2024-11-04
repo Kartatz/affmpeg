@@ -80,7 +80,7 @@ set(
 	--nm="${CMAKE_NM}"
 	--strip="${CMAKE_STRIP}"
 )
-
+message("${FFMPEG_CONFIGURE_FLAGS}")
 if (NOT EXISTS "${FFMPEG_BUILD_DIRECTORY}")
 	file(MAKE_DIRECTORY "${FFMPEG_BUILD_DIRECTORY}")
 endif()

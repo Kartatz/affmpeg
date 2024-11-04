@@ -70,15 +70,15 @@ set(
 	--enable-version3
 	--extra-cflags=-w
 	--extra-ldflags=-fPIC
-	--prefix="${FFMPEG_INSTALL_PREFIX}"
-	--cross-prefix="${TOOLCHAIN_PREFIX}-"
+	--prefix=${FFMPEG_INSTALL_PREFIX}
+	--cross-prefix=${TOOLCHAIN_PREFIX}-
 	--target-os=android
-	--arch="${CMAKE_SYSTEM_PROCESSOR}"
-	--as="${ANDROID_TOOLCHAIN_ROOT}/bin/${TOOLCHAIN_PREFIX}-clang"
-	--ld="${ANDROID_TOOLCHAIN_ROOT}/bin/${TOOLCHAIN_PREFIX}-clang"
-	--cc="${ANDROID_TOOLCHAIN_ROOT}/bin/${TOOLCHAIN_PREFIX}-clang"
-	--nm="${CMAKE_NM}"
-	--strip="${CMAKE_STRIP}"
+	--arch=${CMAKE_SYSTEM_PROCESSOR}
+	--as=${ANDROID_TOOLCHAIN_ROOT}/bin/${TOOLCHAIN_PREFIX}-clang
+	--ld=${ANDROID_TOOLCHAIN_ROOT}/bin/${TOOLCHAIN_PREFIX}-clang
+	--cc=${ANDROID_TOOLCHAIN_ROOT}/bin/${TOOLCHAIN_PREFIX}-clang
+	--nm=${CMAKE_NM}
+	--strip=${CMAKE_STRIP}
 )
 message("${FFMPEG_CONFIGURE_FLAGS}")
 if (NOT EXISTS "${FFMPEG_BUILD_DIRECTORY}")

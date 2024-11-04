@@ -109,4 +109,4 @@ endif()
 
 add_custom_target(ffmpeg ALL DEPENDS "${FFMPEG_INSTALL_PREFIX}")
 
-add_subdirectory(../alibvpx EXCLUDE_FROM_ALL)
+add_subdirectory(./alibvpx EXCLUDE_FROM_ALL)
